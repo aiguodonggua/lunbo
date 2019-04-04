@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>caige</title>
-	<link rel="stylesheet" href="../dist/css/bootstrap.css">
+  <!-- 蔡哥亲测!! 这里的版本必须是3.3.7  同样的的3.x版本还有这种不兼容,没找到原因😂😀-->
+  <!-- 使用的bootstrap版本是dist目录下的 版本号为3.3.7-->
+	<link rel="stylesheet" href="../dist/css/bootstrap.min.css">
 	<script src="../js/jquery-3.2.1.min.js"></script>
-	<script src="../dist/js/bootstrap.js"></script>
+	<script src="../dist/js/bootstrap.min.js"></script>
 </head>
 <style>
 	body{text-align:center;}/*针对老式浏览器*/
-#wrapper{margin:0 auto;width:1000px;}/*要指定宽度*/
+	#wrapper{margin:0 auto;width:1000px;}/*要指定宽度*/
 </style>
 <body>
 	
@@ -21,19 +23,19 @@
         <a class="navbar-brand" href="../jsp/gakki.html">新垣结衣</a>
     </div>
     <div>
-        <p class="navbar-text"><a href="../jsp/lbt.html">新垣结衣</a></p>
+        <p class="navbar-text"><a href="../jsp/lbt.html">gakki</a></p>
     </div>
     <div>
-        <p class="navbar-text"><a href="http://xinqiyaoye.com/AboutUs">新垣结衣</a></p>
+        <p class="navbar-text"><a href="../jsp/lbt.1.html">我老婆</a></p>
     </div>
     <div>
-        <p class="navbar-text"><a href="http://xinqiyaoye.com/produc">新垣结衣</a></p>
+        <p class="navbar-text"><a href="../jsp/lbt.2.html">全民女神</a></p>
     </div>
     <div>
-        <p class="navbar-text"><a href="http://xinqiyaoye.com/new">新垣结衣</a></p>
+        <p class="navbar-text"><a href="../jsp/lbt.3.html">gakki酱</a></p>
     </div>
     <div>
-        <p class="navbar-text"><a href="http://xinqiyaoye.com/Contactu">新垣结衣</a></p>
+        <p class="navbar-text"><a href="http://xinqiyaoye.com/Contactu">小广告</a></p>
     </div>
 	</div>
 </nav>
@@ -46,6 +48,7 @@
 	</ol>   
 	<!-- 轮播 -->
 	<div class="carousel-inner" style="width: 100%; height: 400px;">
+		<!--  -->
 		<div class="item active">
 			<img src="../image/56.jpg" alt="First slide">
 		</div>
@@ -66,7 +69,12 @@
 		<span class="sr-only">Next</span>
 	</a>
 </div> 
-<script>
+<script type="text/javascript">
+//轮播自动播放
+$('#myCarousel').carousel({
+//自动2000秒播放
+interval : 2000,
+});
 </script>
 </body>
 </html>
